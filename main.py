@@ -37,7 +37,7 @@ class FeedbackIn(BaseModel):
 @app.get("/ping")
 # Healthcheck route to ensure that the API is up and running
 def ping():
-    return {"ping": "pong"}
+    return {"ping": "working..."}
 
 
 @app.post("/predict_flower", response_model=QueryOut, status_code=200)
